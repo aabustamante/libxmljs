@@ -20,7 +20,7 @@ var xmlDoc = libxmljs.parseXml(xml);
 // xpath queries
 var gchild = xmlDoc.get('//grandchild');
 
-console.log(gchild.text());  // prints "grandchild content"
+console.log(gchild[0].text());  // prints "grandchild content"
 
 var children = xmlDoc.root().childNodes();
 var child = children[0];
